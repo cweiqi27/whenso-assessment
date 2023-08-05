@@ -90,7 +90,7 @@ export const RegisterForm = () => {
           id: user.uid,
         }),
       );
-      navigate("/app");
+      navigate("/");
     }
   };
 
@@ -149,8 +149,8 @@ export const RegisterForm = () => {
             }}
             error={
               password.input.length > 0 &&
-              confirmPassword.input.length > 0 &&
-              !confirmPassword.valid
+                confirmPassword.input.length > 0 &&
+                !confirmPassword.valid
                 ? "Passwords don't match."
                 : undefined
             }

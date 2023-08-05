@@ -75,7 +75,7 @@ export const LoginForm = () => {
           email: user.email,
         }),
       );
-      navigate("/app");
+      navigate("/");
     }
 
     setLoading(false);

@@ -26,7 +26,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 /**
- * Create a user or login if account exists.
+ * Create user.
  */
 export const create = async (
   email: string,
@@ -75,7 +75,7 @@ export const logout = async (): Promise<ResponseReturnType> => {
 };
 
 /**
- * Send reset password instruction to user account.
+ * Send reset password email to user account.
  */
 export const resetPassword = async (
   email: string,
