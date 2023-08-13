@@ -2,6 +2,7 @@ import { BackRoute } from "@/components/Element/BackRoute";
 import { Loading } from "@/components/Element/Loading";
 import { ContentLayout } from "@/components/Layout";
 import { Logout, selectUserEmail } from "@/features/auth";
+import { ErrorPage } from "@/features/misc";
 import { Suspense } from "react";
 import { useSelector } from "react-redux";
 import { Outlet } from "react-router-dom";

@@ -4,7 +4,6 @@ import React from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import { HelmetProvider } from "react-helmet-async";
 import { Provider } from "react-redux";
-import { BrowserRouter } from "react-router-dom";
 import { Loading } from "@/components/Element/Loading";
 import { PersistGate } from "redux-persist/integration/react";
 
@@ -43,9 +42,7 @@ export const AppProvider = ({ children }: AppProviderProps) => {
           }
         >
           <ErrorBoundary FallbackComponent={ErrorFallback}>
-            <HelmetProvider>
-              <BrowserRouter>{children}</BrowserRouter>
-            </HelmetProvider>
+            <HelmetProvider>{children}</HelmetProvider>
           </ErrorBoundary>
         </React.Suspense>
       </PersistGate>
