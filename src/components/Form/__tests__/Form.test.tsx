@@ -38,7 +38,7 @@ describe("Form", () => {
     expect(mockCallback).toHaveBeenCalledWith(testData);
   });
 
-  it("should render and submit but not call callback when input fails with schema", async () => {
+  it("should fails submission and not proceed with callback when validation fails", async () => {
     const mockCallback = vi.fn().mockImplementation(testFunc);
 
     render(
